@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title> Resume </title>
+  <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #0096a3;
+      color: #0a0404;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background: #004aad;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      background: #007bbf;
+      padding: 10px 15px;
+      border-radius: 50%;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #00e6ff;
+    }
+
+    .contact-btn {
+      background: #1cb3b0;
+      padding: 5px 15px;
+      border-radius: 20px;
+    }
+
+    .resume {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .resume h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .card {
+      background: #65e7a6;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .resume-section {
+      margin-bottom: 30px;
+    }
+
+    .resume-section h3 {
+      color: #083caa;
+      margin-bottom: 10px;
+      font-size: 22px;
+      border-bottom: 2px solid #1cb3b0;
+      padding-bottom: 5px;
+    }
+
+    .resume-item {
+      margin-bottom: 15px;
+    }
+
+    .resume-item h4 {
+      color: #030303;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .resume-item p {
+      color: #0c0a07;
+      margin-bottom: 5px;
+    }
+    
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      background: #1cb3b0;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #1cb3b0;
+      padding: 10px 20px;
+      color: #fff;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background: #212027;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id = "resume" class = "resume">
+    <h2> Resume </h2>
+    <div class = "card">
+
+      Personal Information
+      <div class = "resume-section">
+        <h3> Dafney Morte </h3>
+        <p> <strong> Computer Science Student </strong> | Passionate about software development, problem-solving, and innovative technology solutions.</p>
+        <p> Email: bantotodafney@gmail.com | Phone: 09976541862 | Location: Dumaguete City, Philippines</p>
+      </div>
+
+      Professional Summary
+      <div class = "resume-section">
+        <h3> Professional Summary </h3>
+        <p> Dedicated and detail-oriented Computer Science student with hands-on experience in web development, programming, and database design. Skilled in front-end and back-end technologies with a strong foundation in algorithms and data structures. Adept at collaborating in teams, debugging complex code, and continuously learning new tools and frameworks to stay updated with the latest technologies. </p>
+      </div>
+
+      Experience
+      <div class = "resume-section">
+        <h3> Experience </h3>
+        <div class = "resume-item">
+          <h4> Web Development Intern </h4>
+          <p> TechNova Solutions | June 2025 – August 2025 </p>
+          <ul style = "color: #0a0404; margin-left: 20px;">
+            <li> Assisted in developing responsive websites using HTML, CSS, and JavaScript. </li>
+            <li> Collaborated with the development team to debug and optimize web applications. </li>
+            <li> Designed and implemented small-scale REST APIs for internal tools. </li>
+            <li> Improved page load performance by 20% through efficient code refactoring. </li>
+          </ul>
+        </div>
+        <div class = "resume-item">
+          <h4> Student Programmer </h4>
+          <p> Metro Dumaguete College | September 2024 – May 2025 </p>
+          <ul style="color: #0a0404; margin-left: 20px;">
+            <li> Developed mini-projects such as a library management system and a student grade calculator. </li>
+            <li> Gained hands-on experience with Java, Python, and MySQL for backend development. </li>
+            <li> Collaborated in team projects following Agile methodology principles. </li>
+          </ul>
+        </div>
+      </div>
+
+      Education
+      <div class = "resume-section">
+        <h3> Education </h3>
+        <div class = "resume-item">
+          <h4> Bachelor of Science in Computer Science </h4>
+          <p> Metro Dumaguete College, Dumaguete City, Philippines | Expected Graduation: June 2026 </p>
+          <p> Relevant Coursework: Data Structures & Algorithms, Web Development, Database Systems, Software Engineering, Machine Learning </p>
+        </div>
+      </div>
+
+      Skills
+      <div class = "resume-section">
+        <h3> Skills </h3>
+        <div class = "skills-list">
+          <span class = "skill-tag"> HTML </span>
+          <span class = "skill-tag"> CSS </span>
+          <span class = "skill-tag"> JavaScript </span>
+          <span class = "skill-tag"> Python </span>
+          <span class = "skill-tag"> Java </span>
+        </div>
+      </div>
+
+      <a href="resume.pdf" class="btn" download> Download Full Resume (PDF) </a>
+    </div>
+
+    <div>
+      <a href = "web.html" class = "btn"> Back </a>
+    </div>
+  </section>
+</body>
+</html>
